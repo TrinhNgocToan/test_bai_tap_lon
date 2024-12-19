@@ -123,7 +123,6 @@ def menu_xu_ly_diem():
         else:
             print("Lựa chọn không hợp lệ. Vui lòng thử lại.")
 
-# Các hàm chức năng (chưa triển khai nội dung)
 def xem_lop_hoc():
     print("Xem danh sách lớp học.")
 
