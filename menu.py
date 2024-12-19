@@ -45,6 +45,23 @@ def menu_quan_ly_hoc_sinh():
     print("4. Chỉnh sửa học sinh")
     print("5. Tìm kiếm học sinh")
     print("6. Quay lại menu chính")
+    choice = int(input("Chọn chức năng: "))
+
+    if choice == 1:
+        menu_quan_ly_hoc_sinh()
+    elif choice == 2:
+        menu_quan_ly_hoc_sinh()
+    elif choice == 3:
+        menu_quan_ly_hoc_sinh()
+    elif choice == 4:
+        menu_quan_ly_hoc_sinh()
+    elif choice == 5:
+        menu_quan_ly_hoc_sinh()
+    elif choice == 6:
+        menu_quan_ly_hoc_sinh()
+    else:
+        print("Bạn nhập sai yêu cầu bạn nhập lại ")
+        
 
 def menu_xu_ly_diem():
     print("\n--- Xử lý điểm học sinh ---")
@@ -54,10 +71,6 @@ def menu_xu_ly_diem():
     print("4. Tìm kiếm điểm")
     print("5. Quay lại menu chính")
 
-
- 
-    
-    
 def xem_lop_hoc():# nằm trong hàm quản lí lớp học
         with open(file="package_quan_ly_lop_hoc/file_ds_lop_hoc.csv", mode="r") as file:
             file.close()
