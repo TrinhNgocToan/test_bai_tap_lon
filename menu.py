@@ -3,7 +3,7 @@ import sys
 def menu():
         print("\n===== QUẢN LÝ HỌC SINH =====")
         print("1. Quản lý lớp học")
-        print("2. Quản lý học sinh")
+        print("2. Quản lý thông tin học sinh")
         print("3. Xử lý điểm")
         print("4. Thoát chương trình")
 
@@ -13,7 +13,7 @@ def menu():
             menu_quan_ly_lop_hoc()
             return
         elif choice == 2:
-            menu_quan_ly_hoc_sinh()
+            menu_quan_ly_thong_tin_hoc_sinh()
             return
         elif choice == 3:
             menu_xu_ly_diem()
@@ -50,12 +50,12 @@ def menu_quan_ly_lop_hoc():
         print("Bạn nhập sai yêu cầu bạn nhập lại ")
         
         
-def menu_quan_ly_hoc_sinh():
+def menu_quan_ly_thong_tin_hoc_sinh():
     print("\n--- Quản lý học sinh ---")
     print("1. Xem học sinh")
     print("2. Thêm học sinh")
     print("3. Xóa học sinh")
-    print("4. Chỉnh sửa học sinh")
+    print("4. Chỉnh sửa thông tin học sinh")
     print("5. Tìm kiếm học sinh")
     print("6. Quay lại menu chính")
     choice = int(input("Chọn chức năng: "))
@@ -67,7 +67,7 @@ def menu_quan_ly_hoc_sinh():
     elif choice == 3:
         xoa_hoc_sinh()
     elif choice == 4:
-        chinh_sua_hoc_sinh()
+        chinh_sua_thong_tin_hoc_sinh()
     elif choice ==5:
         tim_kiem_hoc_sinh()
     elif choice == 6:
@@ -86,9 +86,9 @@ def menu_xu_ly_diem():
     if choice == 1:
         xem_hoc_sinh_kem_diem()
     elif choice == 2:
-        chinh_sua_diem()
+        chinh_sua_diem_cua_hoc_sinh()
     elif choice == 3:
-        xoa_diem()
+        xoa_diem_cua_hoc_sinh()
     elif choice == 4:
         tim_kiem_diem()
     elif choice == 5:
