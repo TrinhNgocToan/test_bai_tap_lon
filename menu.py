@@ -71,12 +71,6 @@ def menu_xu_ly_diem():
     print("4. Tìm kiếm điểm")
     print("5. Quay lại menu chính")
 
-def xem_lop_hoc():# nằm trong hàm quản lí lớp học
-        with open(file="package_quan_ly_lop_hoc/file_ds_lop_hoc.csv", mode="r") as file:
-            file.close()
-            
-            
-            
-            
+
             
 menu()
