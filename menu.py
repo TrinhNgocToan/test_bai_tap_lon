@@ -24,6 +24,7 @@ def menu():
         else:
             print("Lựa chọn không hợp lệ. Vui lòng thử lại.")
 
+
 def menu_quan_ly_lop_hoc():
     print("\n--- Quản lý lớp học ---")
     print("1. Xem lớp học")
@@ -32,7 +33,7 @@ def menu_quan_ly_lop_hoc():
     print("4. Chỉnh sửa lớp học")
     print("5. Tìm kiếm lớp học")
     print("6. Quay lại menu chính")
-    choice = float(input("Chọn chức năng (1-4): "))
+    choice = float(input("Chọn chức năng (1-6): "))
     if choice ==1 :
         xem_lop_hoc()
     elif choice == 2:
@@ -47,6 +48,8 @@ def menu_quan_ly_lop_hoc():
         menu()
     else:
         print("Bạn nhập sai yêu cầu bạn nhập lại ")
+        
+        
 def menu_quan_ly_hoc_sinh():
     print("\n--- Quản lý học sinh ---")
     print("1. Xem học sinh")
@@ -65,7 +68,9 @@ def menu_quan_ly_hoc_sinh():
         xoa_hoc_sinh()
     elif choice == 4:
         chinh_sua_hoc_sinh()
-    elif choice == 5:
+    elif choice ==5:
+        tim_kiem_hoc_sinh()
+    elif choice == 6:
         menu()
     else:
         print("Bạn nhập sai yêu cầu bạn nhập lại ")
